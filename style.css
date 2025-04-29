@@ -272,11 +272,9 @@ a:hover {
     padding: 20px;
   }
   
-  body {
-        background-color: white;
-  }
   .nav-links {
     margin-top: 10px;
+    margin-left: -20px;
   }
 
 
@@ -312,6 +310,7 @@ a:hover {
   .logo {
     font-size: 20px;
   }
+
 
   .nav-links a {
     font-size: 14px;
