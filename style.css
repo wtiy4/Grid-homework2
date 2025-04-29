@@ -45,8 +45,7 @@ header{
     margin: 40px auto;
     padding: 0 20px;
   }
-  
-  
+
   section {
     display: grid;
     gap: 30px;
@@ -144,7 +143,7 @@ article {
     margin-top: 15px;
     margin-right: 40px;
     flex-wrap: wrap;
-         height: 80%;
+    height: 80%;
 
   }
   
@@ -263,3 +262,30 @@ a:hover {
 .lists p:hover {
     color: #fff;
 }
+
+
+@media only screen and (max-width: 767px) {
+  .parent {
+    display: grid;
+    grid-template-columns:  1fr; 
+  }
+
+  .bio h3 {
+    font-size: 15px;
+}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .parent {
+    grid-template-columns: 2fr 1fr; 
+    display: grid;
+  }
+
+.bio {
+  padding-bottom: 4em;
+}
+  .bio h3 {
+    font-size: 15px;
+}
+}
+
