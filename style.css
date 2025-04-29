@@ -271,16 +271,14 @@ a:hover {
     align-items: flex-start;
     padding: 20px;
   }
-
+  
+  body {
+        background-color: white;
+  }
   .nav-links {
-    display: flex;
-    flex-wrap: wrap;
     margin-top: 10px;
   }
 
-  .nav-links a {
-    margin: 10px 10px 0 0;
-  }
 
   .parent {
     grid-template-columns: 1fr;
@@ -323,6 +321,9 @@ a:hover {
     padding: 15px;
   }
 
+ p {
+    font-size: 10px;
+  }
   .bio h3 {
     font-size: 24px;
   }
