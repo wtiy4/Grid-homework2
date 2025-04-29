@@ -263,29 +263,95 @@ a:hover {
     color: #fff;
 }
 
+/* Medium devices (tablets, 768px and down) */
 
-@media only screen and (max-width: 767px) {
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+
+  .nav-links a {
+    margin: 10px 10px 0 0;
+  }
+
   .parent {
-    display: grid;
-    grid-template-columns:  1fr; 
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+
+  .bio img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .hobbies {
+    justify-content: center;
+    gap: 15px;
+    margin-right: 0;
+  }
+
+  .form-container {
+    width: 100%;
+    margin: 20px;
+  }
+}
+
+/* Small devices (phones, 480px and down) */
+
+@media (max-width: 480px) {
+  header {
+    padding: 15px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+
+  .card-content {
+    padding: 15px;
   }
 
   .bio h3 {
-    font-size: 15px;
-}
-}
-
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .parent {
-    grid-template-columns: 2fr 1fr; 
-    display: grid;
+    font-size: 24px;
   }
 
-.bio {
-  padding-bottom: 4em;
-}
-  .bio h3 {
-    font-size: 15px;
-}
+  .bio img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .hobby img {
+    width: 40px;
+  }
+
+  .form-container {
+    padding: 20px;
+  }
+
+  input, button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .tags, .container {
+    padding: 15px;
+  }
+
+  .lists p {
+    font-size: 13px;
+    padding: 4px 8px;
+  }
 }
 
